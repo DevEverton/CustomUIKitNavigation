@@ -15,8 +15,7 @@ struct CustomUIKitNavigationApp: App {
     
     var body: some Scene {
         WindowGroup {
-            RootNavigationController(rootView: RootCheckoutView())
-                .environmentObject(nav.checkoutNavigationController)
+            RootNavigationController(nav: nav.checkoutNavigationController, rootView: RootCheckoutView())
                 .environmentObject(router)
                 .onAppear {
                     router.nav = nav.checkoutNavigationController

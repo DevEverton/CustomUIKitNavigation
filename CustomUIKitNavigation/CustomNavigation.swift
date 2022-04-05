@@ -50,7 +50,7 @@ class CheckoutViewsRouter: ObservableObject {
 
 struct RootNavigationController<RootView: View>: UIViewControllerRepresentable {
 
-    @EnvironmentObject var nav: UINavigationController
+    var nav: UINavigationController
     let rootView: RootView
 
 
