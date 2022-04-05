@@ -11,7 +11,7 @@ import SwiftUI
 struct CustomUIKitNavigationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootCheckoutView()
         }
     }
 }

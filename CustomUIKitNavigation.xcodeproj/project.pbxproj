@@ -11,6 +11,7 @@
 		50528FD027FC80390009EB2D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50528FCF27FC80390009EB2D /* ContentView.swift */; };
 		50528FD227FC803C0009EB2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50528FD127FC803C0009EB2D /* Assets.xcassets */; };
 		50528FD527FC803C0009EB2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50528FD427FC803C0009EB2D /* Preview Assets.xcassets */; };
+		50528FDC27FC86650009EB2D /* CustomNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50528FDB27FC86650009EB2D /* CustomNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		50528FCF27FC80390009EB2D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		50528FD127FC803C0009EB2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50528FD427FC803C0009EB2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50528FDB27FC86650009EB2D /* CustomNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				50528FCD27FC80390009EB2D /* CustomUIKitNavigationApp.swift */,
 				50528FCF27FC80390009EB2D /* ContentView.swift */,
+				50528FDB27FC86650009EB2D /* CustomNavigation.swift */,
 				50528FD127FC803C0009EB2D /* Assets.xcassets */,
 				50528FD327FC803C0009EB2D /* Preview Content */,
 			);
@@ -139,6 +142,7 @@
 			files = (
 				50528FD027FC80390009EB2D /* ContentView.swift in Sources */,
 				50528FCE27FC80390009EB2D /* CustomUIKitNavigationApp.swift in Sources */,
+				50528FDC27FC86650009EB2D /* CustomNavigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
