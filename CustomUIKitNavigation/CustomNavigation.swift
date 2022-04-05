@@ -63,19 +63,4 @@ struct RootNavigationController<RootView: View>: UIViewControllerRepresentable {
     func updateUIViewController(_ pageViewController: UINavigationController, context: Context) {
     }
 
-//    func makeCoordinator() -> Coordinator {
-//        return Coordinator(self)
-//    }
-//
-//    class Coordinator: NSObject, CustomNavigationInjected {
-//        var parent: RootNavigationController
-//
-//        init(_ rootVC: RootNavigationController) {
-//            self.parent = rootVC
-//            super.init()
-//            navigator.checkoutNavigationController = parent.navController
-//
-//        }
-//    }
-
 }
