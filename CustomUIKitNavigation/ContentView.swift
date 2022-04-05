@@ -53,10 +53,9 @@ struct CheckoutView4: View {
     var body: some View {
         VStack {
             CheckoutCardView(description: "Checkout Screen 4", buttonImage: Image(systemName: "arrow.counterclockwise.circle.fill"), color: .orange) {
-                router.popToScreen3()
+                router.popToRoot()
             }
         }
-        
     }
 }
 
