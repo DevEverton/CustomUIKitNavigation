@@ -16,7 +16,7 @@ struct RootCheckoutView: View {
             CheckoutCardView(description: "Root Checkout Screen", buttonImage: Image(systemName: "arrow.forward.circle"), color: .blue) {
                 router.pushToScreen2()
             }
-            .navigationTitle("Checkout")
+            .navigationTitle("Root")
         }
         
     }
@@ -30,6 +30,8 @@ struct CheckoutView2: View {
             CheckoutCardView(description: "Checkout Screen 2", buttonImage: Image(systemName: "arrow.forward.circle"), color: .green) {
                 router.pushToScreen3()
             }
+            .navigationTitle("Checkout 2")
+
         }
         
     }
@@ -43,6 +45,8 @@ struct CheckoutView3: View {
             CheckoutCardView(description: "Checkout Screen 3", buttonImage: Image(systemName: "arrow.forward.circle"), color: .red) {
                 router.pushToScreen4()
             }
+            .navigationTitle("Checkout 3")
+
         }
     }
 }
@@ -55,6 +59,8 @@ struct CheckoutView4: View {
             CheckoutCardView(description: "Checkout Screen 4", buttonImage: Image(systemName: "arrow.counterclockwise.circle.fill"), color: .orange) {
                 router.popToRoot()
             }
+            .navigationTitle("Checkout 4")
+
         }
     }
 }
