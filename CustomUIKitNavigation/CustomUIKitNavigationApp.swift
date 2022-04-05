@@ -9,9 +9,22 @@ import SwiftUI
 
 @main
 struct CustomUIKitNavigationApp: App {
+    
+    @StateObject private var nav = CustomNavigationController()
+    @StateObject private var router = CheckoutViewsRouter()
+    
     var body: some Scene {
         WindowGroup {
-            RootCheckoutView()
+            RootNavigationController(rootView: RootCheckoutView())
+                .environmentObject(nav.checkoutNavigationController)
+                .environmentObject(router)
+                .onAppear {
+                    router.nav = nav.checkoutNavigationController
+                }
         }
+        
     }
 }
+
+extension UINavigationController: ObservableObject {}
+
