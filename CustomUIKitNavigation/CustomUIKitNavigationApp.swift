@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct CustomUIKitNavigationApp: App {
     
-    @StateObject private var nav = CustomNavigationController()
+    @StateObject private var nav = NavigationControllers()
     @StateObject private var router = CheckoutViewsRouter()
     
     var body: some Scene {
