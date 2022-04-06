@@ -8,13 +8,13 @@
 import SwiftUI
 import UIKit
 
-struct RootCheckoutView: View {
+struct RootCheckoutView: View, CheckoutViewsFactoryInjected {
     @EnvironmentObject var router: CheckoutViewsRouter
 
     var body: some View {
         VStack {
             CheckoutCardView(description: "Root Checkout Screen", buttonImage: Image(systemName: "arrow.forward.circle"), color: .blue) {
-                router.pushTo(view: CheckoutViewsFactory.checkoutScreen2)
+                router.pushTo(view: factory.checkoutScreen2)
             }
             .navigationTitle("Root")
         }
@@ -22,13 +22,13 @@ struct RootCheckoutView: View {
     }
 }
 
-struct CheckoutView2: View {
+struct CheckoutView2: View, CheckoutViewsFactoryInjected {
     @EnvironmentObject var router: CheckoutViewsRouter
     
     var body: some View {
         VStack {
             CheckoutCardView(description: "Checkout Screen 2", buttonImage: Image(systemName: "arrow.forward.circle"), color: .green) {
-                router.pushTo(view: CheckoutViewsFactory.checkoutScreen3)
+                router.pushTo(view: factory.checkoutScreen3)
             }
             .navigationTitle("Checkout 2")
 
@@ -37,13 +37,13 @@ struct CheckoutView2: View {
     }
 }
 
-struct CheckoutView3: View {
+struct CheckoutView3: View, CheckoutViewsFactoryInjected {
     @EnvironmentObject var router: CheckoutViewsRouter
 
     var body: some View {
         VStack {
             CheckoutCardView(description: "Checkout Screen 3", buttonImage: Image(systemName: "arrow.forward.circle"), color: .red) {
-                router.pushTo(view: CheckoutViewsFactory.checkoutScreen4)
+                router.pushTo(view: factory.checkoutScreen4)
             }
             .navigationTitle("Checkout 3")
 
