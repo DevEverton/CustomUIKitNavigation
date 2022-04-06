@@ -8,13 +8,11 @@
 import UIKit
 import SwiftUI
 
-protocol CheckoutViewsFactoryInjected {}
-
-extension CheckoutViewsFactoryInjected {
-    var factory: CheckoutViewsFactory { CheckoutViewsFactory() }
-}
-
-class CheckoutViewsFactory {
+class CheckoutViews {
+    static let shared = CheckoutViews()
+    
+    private init() {}
+    
     let checkoutScreen2 = UIHostingController(rootView: CheckoutView2())
     let checkoutScreen3 = UIHostingController(rootView: CheckoutView3())
     let checkoutScreen4 = UIHostingController(rootView: CheckoutView4())

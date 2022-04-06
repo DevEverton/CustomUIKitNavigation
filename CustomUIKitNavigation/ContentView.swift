@@ -8,13 +8,13 @@
 import SwiftUI
 import UIKit
 
-struct RootCheckoutView: View, CheckoutViewsFactoryInjected {
+struct RootCheckoutView: View {
     @EnvironmentObject var router: CheckoutViewsRouter
 
     var body: some View {
         VStack {
             CheckoutCardView(description: "Root Checkout Screen", buttonImage: Image(systemName: "arrow.forward.circle"), color: .blue) {
-                router.pushTo(view: factory.checkoutScreen2)
+                router.pushTo(view: CheckoutViews.shared.checkoutScreen2)
             }
             .navigationTitle("Root")
         }
@@ -22,13 +22,13 @@ struct RootCheckoutView: View, CheckoutViewsFactoryInjected {
     }
 }
 
-struct CheckoutView2: View, CheckoutViewsFactoryInjected {
+struct CheckoutView2: View {
     @EnvironmentObject var router: CheckoutViewsRouter
     
     var body: some View {
         VStack {
             CheckoutCardView(description: "Checkout Screen 2", buttonImage: Image(systemName: "arrow.forward.circle"), color: .green) {
-                router.pushTo(view: factory.checkoutScreen3)
+                router.pushTo(view: CheckoutViews.shared.checkoutScreen3)
             }
             .navigationTitle("Checkout 2")
 
@@ -37,13 +37,13 @@ struct CheckoutView2: View, CheckoutViewsFactoryInjected {
     }
 }
 
-struct CheckoutView3: View, CheckoutViewsFactoryInjected {
+struct CheckoutView3: View {
     @EnvironmentObject var router: CheckoutViewsRouter
 
     var body: some View {
         VStack {
             CheckoutCardView(description: "Checkout Screen 3", buttonImage: Image(systemName: "arrow.forward.circle"), color: .red) {
-                router.pushTo(view: factory.checkoutScreen4)
+                router.pushTo(view: CheckoutViews.shared.checkoutScreen4)
             }
             .navigationTitle("Checkout 3")
 
