@@ -60,9 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				50528FCD27FC80390009EB2D /* CustomUIKitNavigationApp.swift */,
-				50A1CE0127FE205500315AC2 /* Navigation */,
 				50528FCF27FC80390009EB2D /* ContentView.swift */,
-				50528FDB27FC86650009EB2D /* CheckoutNavigation.swift */,
+				50A1CE0127FE205500315AC2 /* Navigation */,
 				50528FD127FC803C0009EB2D /* Assets.xcassets */,
 				50528FD327FC803C0009EB2D /* Preview Content */,
 			);
@@ -91,6 +90,7 @@
 		50A1CE0227FE20CD00315AC2 /* Checkout */ = {
 			isa = PBXGroup;
 			children = (
+				50528FDB27FC86650009EB2D /* CheckoutNavigation.swift */,
 			);
 			path = Checkout;
 			sourceTree = "<group>";

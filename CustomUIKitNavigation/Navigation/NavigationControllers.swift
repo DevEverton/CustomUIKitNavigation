@@ -6,8 +6,8 @@
 //
 
 import UIKit
-import Combine
 
-class NavigationControllers: ObservableObject {
-    var checkoutNavigationController = UINavigationController()
+class NavigationControllers {
+    // Here you can add all your navigation controllers
+    let checkoutNavigationController = UINavigationController()
 }

@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//Reusable Navigation Controller to be used as the root controller
 struct RootNavigationController<RootView: View>: UIViewControllerRepresentable {
 
     let nav: UINavigationController
