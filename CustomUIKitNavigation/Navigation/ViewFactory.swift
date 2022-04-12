@@ -7,6 +7,6 @@
 
 import SwiftUI
 
-protocol ViewFactory {
+protocol ViewBuilder {
     func makeView<T: View>(_ view: T, withNavigationTitle title: String) -> UIViewController
 }

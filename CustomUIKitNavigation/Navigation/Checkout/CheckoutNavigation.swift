@@ -8,9 +8,9 @@
 import UIKit
 import SwiftUI
 
-class CheckoutViews: ViewFactory {
+final class CheckoutView: ViewBuilder {
     
-    static let shared = CheckoutViews()
+    static let shared = CheckoutView()
     
     private init() {}
     
@@ -19,7 +19,7 @@ class CheckoutViews: ViewFactory {
     }
 }
 
-class CheckoutViewsRouter: Router {
+final class CheckoutViewsRouter: Router {
     var nav: UINavigationController?
     
     func pushTo(view: UIViewController) {

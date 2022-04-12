@@ -14,7 +14,7 @@ struct RootCheckoutView: View {
     var body: some View {
         VStack {
             CheckoutCardView(description: "Root Checkout Screen", buttonImage: Image(systemName: "arrow.forward.circle"), color: .blue) {
-                router.pushTo(view: CheckoutViews.shared.makeView(CheckoutView2(), withNavigationTitle: "Checkout 2"))
+                router.pushTo(view: CheckoutView.shared.makeView(CheckoutView2(), withNavigationTitle: "Checkout 2"))
             }
         }
         
@@ -27,7 +27,7 @@ struct CheckoutView2: View {
     var body: some View {
         VStack {
             CheckoutCardView(description: "Checkout Screen 2", buttonImage: Image(systemName: "arrow.forward.circle"), color: .green) {
-                router.pushTo(view: CheckoutViews.shared.makeView(CheckoutView3(), withNavigationTitle: "Checkout 3"))
+                router.pushTo(view: CheckoutView.shared.makeView(CheckoutView3(), withNavigationTitle: "Checkout 3"))
             }
 
         }
@@ -41,7 +41,7 @@ struct CheckoutView3: View {
     var body: some View {
         VStack {
             CheckoutCardView(description: "Checkout Screen 3", buttonImage: Image(systemName: "arrow.forward.circle"), color: .red) {
-                router.pushTo(view: CheckoutViews.shared.makeView(CheckoutView4(), withNavigationTitle: "Checkout 4"))
+                router.pushTo(view: CheckoutView.shared.makeView(CheckoutView4(), withNavigationTitle: "Checkout 4"))
             }
 
         }
