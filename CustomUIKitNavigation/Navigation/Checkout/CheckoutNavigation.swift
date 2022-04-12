@@ -8,14 +8,15 @@
 import UIKit
 import SwiftUI
 
-class CheckoutViews {
+class CheckoutViews: ViewFactory {
+    
     static let shared = CheckoutViews()
     
     private init() {}
     
-    let checkoutScreen2 = UIHostingController(rootView: CheckoutView2())
-    let checkoutScreen3 = UIHostingController(rootView: CheckoutView3())
-    let checkoutScreen4 = UIHostingController(rootView: CheckoutView4())
+    func makeView<T: View>(_ view: T, withNavigationTitle title: String) -> UIViewController {
+        CustomHostingController(rootView: view, navigationBarTitle: title, navigationBarHidden: false)
+    }
 }
 
 class CheckoutViewsRouter: Router {
@@ -29,5 +30,4 @@ class CheckoutViewsRouter: Router {
         nav?.popToViewController(view, animated: true)
     }
 }
-
 

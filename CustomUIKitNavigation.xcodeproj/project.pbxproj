@@ -12,6 +12,8 @@
 		50528FD227FC803C0009EB2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50528FD127FC803C0009EB2D /* Assets.xcassets */; };
 		50528FD527FC803C0009EB2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50528FD427FC803C0009EB2D /* Preview Assets.xcassets */; };
 		50528FDC27FC86650009EB2D /* CheckoutNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50528FDB27FC86650009EB2D /* CheckoutNavigation.swift */; };
+		5087C6392805098900DE5BAA /* CustomHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087C6382805098900DE5BAA /* CustomHostingController.swift */; };
+		5087C63B280509CA00DE5BAA /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5087C63A280509CA00DE5BAA /* ViewFactory.swift */; };
 		50A1CDFC27FE1E8B00315AC2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A1CDFB27FE1E8B00315AC2 /* Router.swift */; };
 		50A1CDFE27FE1F2400315AC2 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A1CDFD27FE1F2400315AC2 /* RootNavigationController.swift */; };
 		50A1CE0027FE1FD500315AC2 /* NavigationControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A1CDFF27FE1FD500315AC2 /* NavigationControllers.swift */; };
@@ -24,6 +26,8 @@
 		50528FD127FC803C0009EB2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50528FD427FC803C0009EB2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		50528FDB27FC86650009EB2D /* CheckoutNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutNavigation.swift; sourceTree = "<group>"; };
+		5087C6382805098900DE5BAA /* CustomHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHostingController.swift; sourceTree = "<group>"; };
+		5087C63A280509CA00DE5BAA /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 		50A1CDFB27FE1E8B00315AC2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		50A1CDFD27FE1F2400315AC2 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		50A1CDFF27FE1FD500315AC2 /* NavigationControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllers.swift; sourceTree = "<group>"; };
@@ -81,7 +85,9 @@
 			children = (
 				50A1CDFF27FE1FD500315AC2 /* NavigationControllers.swift */,
 				50A1CDFD27FE1F2400315AC2 /* RootNavigationController.swift */,
+				5087C6382805098900DE5BAA /* CustomHostingController.swift */,
 				50A1CDFB27FE1E8B00315AC2 /* Router.swift */,
+				5087C63A280509CA00DE5BAA /* ViewFactory.swift */,
 				50A1CE0227FE20CD00315AC2 /* Checkout */,
 			);
 			path = Navigation;
@@ -170,7 +176,9 @@
 				50528FD027FC80390009EB2D /* ContentView.swift in Sources */,
 				50528FCE27FC80390009EB2D /* CustomUIKitNavigationApp.swift in Sources */,
 				50A1CDFE27FE1F2400315AC2 /* RootNavigationController.swift in Sources */,
+				5087C6392805098900DE5BAA /* CustomHostingController.swift in Sources */,
 				50528FDC27FC86650009EB2D /* CheckoutNavigation.swift in Sources */,
+				5087C63B280509CA00DE5BAA /* ViewFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
