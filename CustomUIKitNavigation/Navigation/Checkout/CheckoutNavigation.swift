@@ -10,7 +10,7 @@ import SwiftUI
 
 final class CheckoutView: ViewBuilder {
     
-    static let shared = CheckoutView()
+    static let builder = CheckoutView()
     
     private init() {}
     
