@@ -79,12 +79,10 @@ struct CheckoutCardView: View {
             Spacer()
             HStack {
                 Spacer()
-                Button {
-                    onTap()
-                } label: {
+                Button(action: onTap, label: {
                     buttonImage
                         .font(.system(size: 30, weight: .regular))
-                }
+                })
             }
         }
         .padding()
